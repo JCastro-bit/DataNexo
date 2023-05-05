@@ -18,21 +18,19 @@ namespace DataNexo
         {
             if (!IsPostBack)
             {
-
             }
         }
 
         protected void btnInsert_OnClick(object sender, EventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
-            DatabaseConnector dbConnector = new DatabaseConnector(connectionString);
+            DatabaseConnector dbConnector = new DatabaseConnector();
 
             // Ejemplo de consulta INSERT
             string insertQuery = "INSERT INTO tabla_usuarios (tNombreUsuario, tUsuario, tContrasena, tFechaHoraAlta) VALUES ('admin', 'admin@email.com', aes_encrypt('contraseña123', 'AES'), NOW());";
             int affectedRows = dbConnector.ExecuteNonQuery(insertQuery);
 
             // Ejemplo de consulta SELECT
-            string selectQuery = "SELECT * FROM tabla_usuarios";
+            string selectQuery = "SELECT tNombreUsuario, tUsuario, tFechaHoraAlta FROM tabla_usuarios";
             DataTable Usuarios = dbConnector.ExecuteQuery(selectQuery);
 
             // Llenar el GridView con el DataTable Usuarios

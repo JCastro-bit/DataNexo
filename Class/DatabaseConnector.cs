@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Data;
 using MySql.Data.MySqlClient;
 
@@ -6,9 +7,9 @@ public class DatabaseConnector
 {
     private string _connectionString;
 
-    public DatabaseConnector(string connectionString)
+    public DatabaseConnector()
     {
-        _connectionString = connectionString;
+        _connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
     }
 
     // Método para ejecutar consultas que no devuelven resultados (INSERT, UPDATE, DELETE)
