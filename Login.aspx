@@ -10,6 +10,7 @@
     <%--Links--%>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Assets/style.css" rel="stylesheet" />
 
     <%--Scripts--%>
     <script src="Scripts/bootstrap.min.js"></script>
@@ -21,25 +22,25 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <div class="container py-4 mt-5">
+            <div class="container py-4">
                 <div class="container col-xl-10 col-xxl-8 px-4 py-5">
                     <div class="row align-items-center g-lg-5 py-5">
                         <div class="col-lg-7 text-center text-lg-start">
-                            <h1 class="display-4 fw-bold lh-1 mb-3">DataNexo, su gestor de datos. </h1>
+                            <h1 class="display-4 fw-bold lh-1 mb-3 shadow shadow-sm">DataNexo, su gestor de datos. </h1>
                             <p class="col-lg-10 fs-4">
                                 Nuestro servicio ofrece una amplia gama de 
                                 herramientas para ayudarle a manejar sus datos de manera eficiente y efectiva. 
                             </p>
                         </div>
                         <div class="col-md-10 mx-auto col-lg-5">
-                            <form class="p-4 p-md-5 border rounded-3 bg-light">
+                            <div class="p-4 p-md-5 border rounded-3 bg-light shadow-sm">
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                                    <label for="floatingInput">Email address</label>
+                                    <asp:TextBox ID="txtCorreo" CssClass="form-control" runat="server" placeholder="Correo"></asp:TextBox>
+                                    <label for="floatingInput">Correo</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
-                                    <label for="floatingPassword">Password</label>
+                                    <asp:TextBox ID="txtContrasena" CssClass="form-control" runat="server" placeholder="Contraseña"></asp:TextBox>
+                                    <label for="floatingPassword">Contraseña</label>
                                 </div>
                                 <div class="checkbox mb-3">
                                     <label>
@@ -47,10 +48,10 @@
                                         Recuérdame           
                                     </label>
                                 </div>
-                                <button class="w-100 btn btn-lg btn-primary" type="submit">Regístrate</button>
+                                <asp:Button ID="btnIngresar" OnClick="btnIngresar_OnClick" CssClass="w-100 btn btn-lg btn-primary" runat="server" Text="Entrar" />
                                 <hr class="my-4" />
-                                <small class="text-muted">Al hacer clic en Registrarse, acepta los términos de uso.</small>
-                            </form>
+                                <asp:Label ID="lblMensaje" CssClass="text-muted" runat="server" Text="Label">Al hacer clic en Entrar, acepta los términos de uso.</asp:Label>
+                            </div>
                         </div>
                     </div>
                 </div>

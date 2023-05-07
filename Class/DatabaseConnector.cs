@@ -1,7 +1,6 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
 using System.Configuration;
 using System.Data;
-using MySql.Data.MySqlClient;
 
 public class DatabaseConnector
 {
@@ -27,20 +26,22 @@ public class DatabaseConnector
     }
 
     // Método para ejecutar consultas que devuelven un conjunto de resultados (SELECT)
-    public DataTable ExecuteQuery(string query)
+    public DataTable ExecuteQuery(MySqlCommand cmd)
     {
+        DataTable result = new DataTable();
+
         using (MySqlConnection connection = new MySqlConnection(_connectionString))
         {
+            cmd.Connection = connection;
             connection.Open();
-            using (MySqlCommand command = new MySqlCommand(query, connection))
+
+            using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
             {
-                DataTable dataTable = new DataTable();
-                using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
-                {
-                    adapter.Fill(dataTable);
-                }
-                return dataTable;
+                adapter.Fill(result);
             }
         }
+
+        return result;
     }
+
 }

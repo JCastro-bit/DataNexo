@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="DataNexo.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registrar.aspx.cs" Inherits="DataNexo.Registrar" %>
 
 <!DOCTYPE html>
 
@@ -35,7 +35,9 @@
                             </div>
                             <p>
                                 <a class="btn btn-primary" href="Login.aspx" role="button">Entrar&nbsp<i class="fa-solid fa-door-open"></i></a>
-                                <button id="btnInsert" runat="server" onserverclick="btnInsert_OnClick" class="btn btn-primary">Registrar&nbsp&nbsp<i class="fa-solid fa-right-to-bracket"></i></button>
+                                <%--
+                                    <button id="btnInsert" runat="server" onserverclick="btnInsert_OnClick" class="btn btn-primary">Registrar&nbsp&nbsp<i class="fa-solid fa-right-to-bracket"></i></button>
+                                --%>
                             </p>
                         </div>
                     </div>
@@ -61,7 +63,6 @@
                                 <asp:GridView
                                     ID="GridViewUsuarios" runat="server"
                                     CssClass="table table-sm table-hover gridview-without-borders"
-                                    OnPageIndexChanging="GridViewUsuarios_PageIndexChanging"
                                     AllowPaging="true"
                                     PageSize="10"
                                     AutoGenerateColumns="false">
