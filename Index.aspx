@@ -54,23 +54,22 @@
                             </div>
                             <p>
                                 <a class="btn btn-primary" href="Login.aspx" role="button">Entrar&nbsp<i class="fa-solid fa-door-open"></i></a>
-                                <button id="btnInsert" runat="server" onserverclick="btnInsert_OnClick" class="btn btn-primary">Registrar&nbsp&nbsp<i class="fa-solid fa-right-to-bracket"></i></button>
                             </p>
                         </div>
                     </div>
                     <div class="row align-items-md-stretch">
                         <div class="col-md-6">
                             <div class="h-100 p-5 text-bg-dark rounded-3 shadow-sm">
-                                <h2>¿Qué es DataNexo?</h2>
-                                <p>DataNexo es un gestor de datos que permite a los usuarios almacenar y gestionar sus datos de forma segura.</p>
-                                <button class="btn btn-outline-light" type="button">Example button</button>
+                                <h2>Registrar</h2>
+                                <p>En esta opción, podrás realizar todos los registros que necesites sin ninguna limitación.</p>
+                                <button class="btn btn-outline-light" type="button" id="btnInsert" runat="server" onserverclick="btnInsert_OnClick">Registrar&nbsp&nbsp<i class="fa-solid fa-right-to-bracket"></i></button>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="h-100 p-5 bg-light border rounded-3 shadow-sm">
-                                <h2>¿Cómo funciona?</h2>
-                                <p>El usuario se registra en la aplicación y crea una cuenta. A partir de ahí, puede crear bases de datos y tablas para almacenar sus datos.</p>
-                                <button class="btn btn-outline-secondary" type="button">Example button</button>
+                                <h2>Consultar</h2>
+                                <p>En esta sección, podrás encontrar todos los registros disponibles para su consulta.</p>
+                                <button class="btn btn-outline-secondary" type="button" id="btConsultar" runat="server">Consultar&nbsp&nbsp<i class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
                         </div>
                     </div>

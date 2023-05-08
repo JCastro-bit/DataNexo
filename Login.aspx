@@ -45,7 +45,7 @@
                 <div class="container col-xl-10 col-xxl-8 px-4 py-5">
                     <div class="row align-items-center g-lg-5 py-5">
                         <div class="col-lg-7 text-center text-lg-start">
-                            <h1 class="display-4 fw-bold lh-1 mb-3 shadow shadow-sm">DataNexo, su gestor de datos. </h1>
+                            <h1 class="display-4 fw-bold lh-1 mb-3">DataNexo, su gestor de datos. </h1>
                             <p class="col-lg-10 fs-4">
                                 Nuestro servicio ofrece una amplia gama de 
                                 herramientas para ayudarle a manejar sus datos de manera eficiente y efectiva. 

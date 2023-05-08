@@ -8,6 +8,8 @@ h1 {
     font-family: 'Secular One', sans-serif;
 }
 
+/* ==================== PAGINATION */
+
 .pager a {
     text-decoration: none;
     display: inline-block;

@@ -33,6 +33,15 @@ namespace DataNexo
         protected global::System.Web.UI.HtmlControls.HtmlButton btnInsert;
 
         /// <summary>
+        /// Control btConsultar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btConsultar;
+
+        /// <summary>
         /// Control GridViewUsuarios.
         /// </summary>
         /// <remarks>
