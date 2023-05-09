@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registrar.aspx.cs" Inherits="DataNexo.Registrar" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Consultar.aspx.cs" Inherits="DataNexo.Consultar" %>
 
 <!DOCTYPE html>
 
@@ -49,29 +49,45 @@
                 </header>
                 <div class="row">
                     <div class="row align-items-md-stretch mb-2 mt-3">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <div class="card mt-5">
-                                    <div class="card-header">
-                                        <h3>Registro de usuario</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="mb-3">
-                                            <asp:Label ID="lblNombreUsuario" AssociatedControlID="txtNombreUsuario" runat="server" CssClass="form-label">Nombre de usuario</asp:Label>
-                                            <asp:TextBox ID="txtNombreUsuario" runat="server" CssClass="form-control"></asp:TextBox>
-                                        </div>
-                                        <div class="mb-3">
-                                            <asp:Label ID="lblUsuario" AssociatedControlID="txtUsuario" runat="server" CssClass="form-label">Usuario</asp:Label>
-                                            <asp:TextBox ID="txtUsuario" runat="server" CssClass="form-control"></asp:TextBox>
-                                        </div>
-                                        <div class="mb-3">
-                                            <asp:Label ID="lblContrasena" AssociatedControlID="txtContrasena" runat="server" CssClass="form-label">Contraseña</asp:Label>
-                                            <asp:TextBox ID="txtContrasena" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
-                                        </div>
-                                        <asp:Button ID="btnRegistrar" runat="server" CssClass="btn btn-primary" OnClick="btnRegistrar_Click" Text="Registrar" />
-                                        <asp:Label ID="lblMensaje" runat="server" CssClass="text-muted" Visible="false"></asp:Label>
-                                    </div>
-                                </div>
+                        <div class="col-md-12 mb-2 mt-3">
+                            <div class="h-100 p-5 bg-light border rounded-3 text-center shadow-sm">
+                                <asp:GridView
+                                    ID="GridViewUsuarios" runat="server"
+                                    CssClass="table table-sm table-hover gridview-without-borders"
+                                    AllowPaging="true"
+                                    PageSize="10"
+                                    OnPageIndexChanging="GridViewUsuarios_PageIndexChanging"
+                                    AutoGenerateColumns="false">
+
+                                    <Columns>
+                                        <asp:BoundField DataField="idUsuario" HeaderText="#" />
+                                        <asp:BoundField DataField="tNombreUsuario" HeaderText="Nombre" />
+                                        <asp:BoundField DataField="tUsuario" HeaderText="Usuario" />
+                                        <asp:BoundField DataField="tFechaHoraAlta" HeaderText="Fecha Alta" />
+                                    </Columns>
+
+                                    <HeaderStyle CssClass="gridview-header" />
+
+                                    <RowStyle
+                                        BackColor="white"
+                                        HorizontalAlign="Center" />
+
+                                    <AlternatingRowStyle
+                                        BackColor="#ECECEC" />
+
+                                    <PagerSettings
+                                        Mode="Numeric"
+                                        Position="Bottom"
+                                        PageButtonCount="5" />
+
+                                    <PagerStyle
+                                        Height="40px"
+                                        VerticalAlign="Bottom"
+                                        HorizontalAlign="Center"
+                                        CssClass="pager" />
+
+                                </asp:GridView>
+
                             </div>
                         </div>
                     </div>

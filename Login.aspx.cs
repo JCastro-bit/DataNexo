@@ -13,8 +13,8 @@ namespace DataNexo
 
         private void LimpiarCampos()
         {
-            txtCorreo.Text = "";
-            txtContrasena.Text = "";
+            txtCorreo.Text = string.Empty;
+            txtContrasena.Text = string.Empty;
         }
 
         protected void btnIngresar_OnClick(object sender, EventArgs e)

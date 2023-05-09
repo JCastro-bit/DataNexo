@@ -47,14 +47,11 @@
                         <div class="px-4 py-5 my-5 text-center">
                             <h1 class="display-5 fw-bold">DataNexo</h1>
                             <div class="col-lg-6 mx-auto">
-                                <p class="lead mb-4">
+                                <p class="lead mb-1">
                                     Bienvenido a DataNexo, su gestor de datos. Nuestro servicio ofrece una amplia gama de 
                                     herramientas para ayudarle a manejar sus datos de manera eficiente y efectiva.
                                 </p>
                             </div>
-                            <p>
-                                <a class="btn btn-primary" href="Login.aspx" role="button">Entrar&nbsp<i class="fa-solid fa-door-open"></i></a>
-                            </p>
                         </div>
                     </div>
                     <div class="row align-items-md-stretch">
@@ -62,56 +59,14 @@
                             <div class="h-100 p-5 text-bg-dark rounded-3 shadow-sm">
                                 <h2>Registrar</h2>
                                 <p>En esta opción, podrás realizar todos los registros que necesites sin ninguna limitación.</p>
-                                <button class="btn btn-outline-light" type="button" id="btnInsert" runat="server" onserverclick="btnInsert_OnClick">Registrar&nbsp&nbsp<i class="fa-solid fa-right-to-bracket"></i></button>
+                                <a href="Registrar.aspx" class="btn btn-outline-light">Registrar&nbsp&nbsp<i class="fa-solid fa-right-to-bracket"></i></a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="h-100 p-5 bg-light border rounded-3 shadow-sm">
                                 <h2>Consultar</h2>
                                 <p>En esta sección, podrás encontrar todos los registros disponibles para su consulta.</p>
-                                <button class="btn btn-outline-secondary" type="button" id="btConsultar" runat="server">Consultar&nbsp&nbsp<i class="fa-solid fa-magnifying-glass"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-md-stretch mb-2 mt-3">
-                        <div class="col-md-12 mb-2 mt-3">
-                            <div class="h-100 p-5 bg-light border rounded-3 text-center shadow-sm">
-                                <asp:GridView
-                                    ID="GridViewUsuarios" runat="server"
-                                    CssClass="table table-sm table-hover gridview-without-borders"
-                                    OnPageIndexChanging="GridViewUsuarios_PageIndexChanging"
-                                    AllowPaging="true"
-                                    PageSize="10"
-                                    AutoGenerateColumns="false">
-
-                                    <Columns>
-                                        <asp:BoundField DataField="tNombreUsuario" HeaderText="Nombre" />
-                                        <asp:BoundField DataField="tUsuario" HeaderText="Usuario" />
-                                        <asp:BoundField DataField="tFechaHoraAlta" HeaderText="Fecha Alta" />
-                                    </Columns>
-
-                                    <HeaderStyle CssClass="gridview-header" />
-
-                                    <RowStyle
-                                        BackColor="white"
-                                        HorizontalAlign="Center" />
-
-                                    <AlternatingRowStyle
-                                        BackColor="#ECECEC" />
-
-                                    <PagerSettings
-                                        Mode="Numeric"
-                                        Position="Bottom"
-                                        PageButtonCount="5" />
-
-                                    <PagerStyle
-                                        Height="40px"
-                                        VerticalAlign="Bottom"
-                                        HorizontalAlign="Center"
-                                        CssClass="pager" />
-
-                                </asp:GridView>
-
+                                <a href="Consultar.aspx" class="btn btn-outline-dark">Consultar&nbsp&nbsp<i class="fa-solid fa-magnifying-glass"></i></a>
                             </div>
                         </div>
                     </div>

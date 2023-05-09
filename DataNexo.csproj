@@ -106,7 +106,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Favicon\android-icon-144x144.png" />
+    <Content Include="Assets\Favicon\android-icon-192x192.png" />
+    <Content Include="Assets\Favicon\android-icon-36x36.png" />
+    <Content Include="Assets\Favicon\android-icon-48x48.png" />
+    <Content Include="Assets\Favicon\android-icon-72x72.png" />
+    <Content Include="Assets\Favicon\android-icon-96x96.png" />
+    <Content Include="Assets\Favicon\apple-icon-114x114.png" />
+    <Content Include="Assets\Favicon\apple-icon-120x120.png" />
+    <Content Include="Assets\Favicon\apple-icon-144x144.png" />
+    <Content Include="Assets\Favicon\apple-icon-152x152.png" />
+    <Content Include="Assets\Favicon\apple-icon-180x180.png" />
+    <Content Include="Assets\Favicon\apple-icon-57x57.png" />
+    <Content Include="Assets\Favicon\apple-icon-60x60.png" />
+    <Content Include="Assets\Favicon\apple-icon-72x72.png" />
+    <Content Include="Assets\Favicon\apple-icon-76x76.png" />
+    <Content Include="Assets\Favicon\apple-icon-precomposed.png" />
+    <Content Include="Assets\Favicon\apple-icon.png" />
+    <Content Include="Assets\Favicon\browserconfig.xml" />
+    <Content Include="Assets\Favicon\favicon-16x16.png" />
+    <Content Include="Assets\Favicon\favicon-32x32.png" />
+    <Content Include="Assets\Favicon\favicon-96x96.png" />
+    <Content Include="Assets\Favicon\favicon.ico" />
+    <Content Include="Assets\Favicon\ms-icon-144x144.png" />
+    <Content Include="Assets\Favicon\ms-icon-150x150.png" />
+    <Content Include="Assets\Favicon\ms-icon-310x310.png" />
+    <Content Include="Assets\Favicon\ms-icon-70x70.png" />
     <Content Include="Assets\style.css" />
+    <Content Include="Consultar.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -135,6 +162,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\DatabaseConnector.cs" />
+    <Compile Include="Class\GenericClass.cs" />
+    <Compile Include="Consultar.aspx.cs">
+      <DependentUpon>Consultar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultar.aspx.designer.cs">
+      <DependentUpon>Consultar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -176,6 +211,7 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Assets\Favicon\manifest.json" />
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />
