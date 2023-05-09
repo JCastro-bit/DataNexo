@@ -1,20 +1,4 @@
 {
-  "dependencies": {
-    "compute.appService1": {
-      "restored": true,
-      "restoreTime": "2023-05-09T05:33:46.2787755Z"
-    }
-  },
-  "parameters": {
-    "compute.appService1.subscriptionId": {
-      "Name": "compute.appService1.subscriptionId",
-      "Type": "subscription",
-      "Value": "bd32f83f-6291-4867-adf7-8333a2b922c7"
-    },
-    "compute.appService1.resourceGroupName": {
-      "Name": "compute.appService1.resourceGroupName",
-      "Type": "resourceGroup",
-      "Value": "DataNexo_group-8bb7"
-    }
-  }
+  "dependencies": {},
+  "parameters": {}
 }
