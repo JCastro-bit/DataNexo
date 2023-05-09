@@ -1,5 +1,7 @@
 # Gestión de Dispositivos Móviles para Empleados
 
+<img src="https://src.casttro.mx/git/datanexo-banner.png" width="70%" alt="Project portrait">
+
 Este proyecto de ASP.NET Web Forms permite gestionar la asignación de dispositivos móviles a empleados de una empresa. Utiliza MySQL (MariaDB) como base de datos y Bootstrap para un diseño adaptable y amigable. Incluye funcionalidades para agregar, actualizar y consultar información de empleados y dispositivos.
 
 ## Características
