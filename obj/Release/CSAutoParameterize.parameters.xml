@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="MySqlConnection-Web.config Connection String" description="MySqlConnection Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="server=localhost;port=3307;database=DataNexo;uid=root;password=Lclcynpc01;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\javier\.velazquez\\source\\repos\\DataNexo\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MySqlConnection']/@connectionString" />
+  </parameter>
+</parameters>

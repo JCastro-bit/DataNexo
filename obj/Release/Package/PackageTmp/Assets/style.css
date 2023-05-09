@@ -1,0 +1,44 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+/* ==================== GENERAL */
+
+h1, .logo {
+    font-family: 'Secular One', sans-serif;
+}
+
+/* ==================== PAGINATION */
+
+.pager a {
+    text-decoration: none;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    margin: 0;
+    background-color: white;
+}
+
+.pager span {
+    text-decoration: none;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    margin: 0;
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* ==================== GRIDVIEW */
+
+.gridview-without-borders {
+    border-style: none;
+}
